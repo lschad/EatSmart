@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <Color x:Key="Theme.Accent">#45aaf2</Color>
+    <Color x:Key="Theme.AccentDark">#4b7bec</Color>
+    <Color x:Key="Theme.AccentAlternative">#a55eea</Color>
+    <Color x:Key="Theme.Foreground">#030303</Color>
+    <Color x:Key="Theme.Background">#fefefe</Color>
+    <Color x:Key="Theme.BackgroundDark">#dfdfdf</Color>
+
+    <SolidColorBrush x:Key="Theme.Debug.Brush" Color="{StaticResource Apple.Colors.Pink}" />
+    <SolidColorBrush x:Key="Theme.Info.Brush" Color="{StaticResource Apple.Colors.TealBlue}" />
+    <SolidColorBrush x:Key="Theme.Warning.Brush" Color="{StaticResource Apple.Colors.Orange}" />
+    <SolidColorBrush x:Key="Theme.Error.Brush" Color="{StaticResource Apple.Colors.Red}" />
+
+    <Thickness x:Key="Theme.BorderThickness">1</Thickness>
+    <CornerRadius x:Key="Theme.CornerRadius">2</CornerRadius>
+
+    <!--https://docs.microsoft.com/en-us/dotnet/framework/wpf/advanced/media/shadowtext08.png-->
+    <sys:Double x:Key="Theme.Shadow.Direction">225</sys:Double>
+    <RenderingBias x:Key="Theme.Shadow.RenderingBias">Quality</RenderingBias>
+    <sys:Double x:Key="Theme.Shadow.Opacity">0.4</sys:Double>
+</ResourceDictionary>

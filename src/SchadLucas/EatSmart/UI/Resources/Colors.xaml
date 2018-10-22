@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Apple/iOS Colors -->
+    <Color x:Key="Apple.Colors.Red" R="255" G="59" B="48" A="255" />
+    <Color x:Key="Apple.Colors.Orange" R="255" G="149" B="0" A="255" />
+    <Color x:Key="Apple.Colors.Yellow" R="255" G="204" B="0" A="255" />
+    <Color x:Key="Apple.Colors.Green" R="76" G="217" B="100" A="255" />
+    <Color x:Key="Apple.Colors.TealBlue" R="90" G="200" B="250" A="255" />
+    <Color x:Key="Apple.Colors.Blue" R="0" G="122" B="255" A="255" />
+    <Color x:Key="Apple.Colors.Purple" R="88" G="86" B="214" A="255" />
+    <Color x:Key="Apple.Colors.Pink" R="255" G="45" B="85" A="255" />
+</ResourceDictionary>

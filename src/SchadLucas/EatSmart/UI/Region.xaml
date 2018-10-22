@@ -1,0 +1,10 @@
+﻿<UserControl x:Class="SchadLucas.EatSmart.UI.Region"
+             x:Name="RegionControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid DataContext="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type UserControl}}}"
+          Visibility="{Binding Visible, Converter={StaticResource Converter.Visibility.Boolean}}">
+        <ContentControl x:Name="RegionContentControl" Content="{Binding RegionContent}" />
+    </Grid>
+</UserControl>

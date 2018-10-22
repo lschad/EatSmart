@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Loading.Arcs.xaml" />
+        <ResourceDictionary Source="Loading.ArcsRing.xaml" />
+        <ResourceDictionary Source="Loading.DoubleBounce.xaml" />
+        <ResourceDictionary Source="Loading.FlipPlane.xaml" />
+        <ResourceDictionary Source="Loading.Pulse.xaml" />
+        <ResourceDictionary Source="Loading.Ring.xaml" />
+        <ResourceDictionary Source="Loading.ThreeDots.xaml" />
+        <ResourceDictionary Source="Loading.Wave.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

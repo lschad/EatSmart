@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="SchadLucas.EatSmart.UI.Views.ApplicationOverlayView"
+             x:Name="ApplicationOverlayViewControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:SchadLucas.EatSmart.ViewModels"
+             mc:Ignorable="d" d:DataContext="{d:DesignInstance Type=vm:IApplicationOverlayViewModel}">
+
+    <Grid Background="Black" Opacity="0.9" x:Name="OverlayBackground">
+        <ContentPresenter Content="{Binding OverlayContent}" x:Name="OverlayContent" />
+    </Grid>
+</UserControl>

@@ -1,0 +1,77 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!--Random-->
+    <sys:Double x:Key="PopupNotification.Button.Close.Size">20</sys:Double>
+    <Duration x:Key="PopupNotification.Button.Close.Animation.Duration">0:0:0.25</Duration>
+
+    <!--Background-->
+    <Brush x:Key="PopupNotification.Button.Close.Background.Default.Brush">#00000000</Brush>
+    <Color x:Key="PopupNotification.Button.Close.Background.Default.Color">#00000000</Color>
+    <Color x:Key="PopupNotification.Button.Close.Background.Highlight.Color">#ffa6a6a6</Color>
+
+    <!--Foreground-->
+    <Brush x:Key="PopupNotification.Button.Close.Foreground.Default.Brush">#ff000000</Brush>
+    <Color x:Key="PopupNotification.Button.Close.Foreground.Default.Color">#ff303030</Color>
+    <Color x:Key="PopupNotification.Button.Close.Foreground.Highlight.Color">#ff000000</Color>
+
+    <!--Border-->
+    <Brush x:Key="PopupNotification.Button.Close.Border.Default.Brush">#00000000</Brush>
+    <Color x:Key="PopupNotification.Button.Close.Border.Default.Color">#00000000</Color>
+    <Color x:Key="PopupNotification.Button.Close.Border.Highlight.Color">#ff333333</Color>
+    <Thickness x:Key="PopupNotification.Button.Close.Border.Thickness">2</Thickness>
+
+    <!--Style-->
+    <Style x:Key="PopupNotification.Button.Close.Style" TargetType="{x:Type Button}" BasedOn="{StaticResource TriggerableButtonBase}">
+        <Setter Property="Background" Value="{StaticResource PopupNotification.Button.Close.Background.Default.Brush}" />
+        <Setter Property="Foreground" Value="{StaticResource PopupNotification.Button.Close.Foreground.Default.Brush}" />
+        <Setter Property="Height" Value="{StaticResource PopupNotification.Button.Close.Size}" />
+        <Setter Property="Width" Value="{StaticResource PopupNotification.Button.Close.Size}" />
+        <Setter Property="BorderBrush" Value="{StaticResource PopupNotification.Button.Close.Border.Default.Brush}" />
+        <Setter Property="BorderThickness" Value="{StaticResource PopupNotification.Button.Close.Border.Thickness}" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Trigger.EnterActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                                Duration="{StaticResource PopupNotification.Button.Close.Animation.Duration}"
+                                                From="{StaticResource PopupNotification.Button.Close.Background.Default.Color}"
+                                                To="{StaticResource PopupNotification.Button.Close.Background.Highlight.Color}" />
+                            <ColorAnimation Storyboard.TargetProperty="(Button.BorderBrush).(SolidColorBrush.Color)"
+                                                Duration="{StaticResource PopupNotification.Button.Close.Animation.Duration}"
+                                                From="{StaticResource PopupNotification.Button.Close.Border.Default.Color}"
+                                                To="{StaticResource PopupNotification.Button.Close.Border.Highlight.Color}" />
+                            <ColorAnimation Storyboard.TargetProperty="(Button.Foreground).(SolidColorBrush.Color)"
+                                                Duration="{StaticResource PopupNotification.Button.Close.Animation.Duration}"
+                                                From="{StaticResource PopupNotification.Button.Close.Foreground.Default.Color}"
+                                                To="{StaticResource PopupNotification.Button.Close.Foreground.Highlight.Color}" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </Trigger.EnterActions>
+                <Trigger.ExitActions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)"
+                                                Duration="{StaticResource PopupNotification.Button.Close.Animation.Duration}"
+                                                From="{StaticResource PopupNotification.Button.Close.Background.Highlight.Color}"
+                                                To="{StaticResource PopupNotification.Button.Close.Background.Default.Color}" />
+                            <ColorAnimation Storyboard.TargetProperty="(Button.BorderBrush).(SolidColorBrush.Color)"
+                                                Duration="{StaticResource PopupNotification.Button.Close.Animation.Duration}"
+                                                From="{StaticResource PopupNotification.Button.Close.Border.Highlight.Color}"
+                                                To="{StaticResource PopupNotification.Button.Close.Border.Default.Color}" />
+                            <ColorAnimation Storyboard.TargetProperty="(Button.Foreground).(SolidColorBrush.Color)"
+                                                Duration="{StaticResource PopupNotification.Button.Close.Animation.Duration}"
+                                                From="{StaticResource PopupNotification.Button.Close.Foreground.Highlight.Color}"
+                                                To="{StaticResource PopupNotification.Button.Close.Foreground.Default.Color}" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </Trigger.ExitActions>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary> 

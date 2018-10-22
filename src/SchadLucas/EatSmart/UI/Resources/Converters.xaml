@@ -1,0 +1,28 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:converters="clr-namespace:SchadLucas.Wpf.Converters;assembly=SchadLucas.Wpf.Converters"
+                    xmlns:color="clr-namespace:SchadLucas.Wpf.Converters.Color;assembly=SchadLucas.Wpf.Converters"
+                    xmlns:bool="clr-namespace:SchadLucas.Wpf.Converters.Boolean;assembly=SchadLucas.Wpf.Converters"
+                    xmlns:math="clr-namespace:SchadLucas.Wpf.Converters.Math;assembly=SchadLucas.Wpf.Converters"
+                    xmlns:visibility="clr-namespace:SchadLucas.Wpf.Converters.Visibility;assembly=SchadLucas.Wpf.Converters">
+
+    <converters:ValueConverterSequence x:Key="Converter.Sequence" />
+
+    <color:ColorToSolidColorBrush x:Key="Converter.Color.ToBrush" />
+    <color:Brightness x:Key="Converter.Color.Brightness" />
+
+    <bool:NegateBoolean x:Key="Converter.Boolean.Negate" />
+    <bool:NullToBoolean x:Key="Converter.Boolean.Null" />
+    <bool:NotNullToBoolean x:Key="Converter.Boolean.NotNull" />
+
+    <math:Add x:Key="Converter.Math.Add" />
+    <math:Sub x:Key="Converter.Math.Sub" />
+    <math:Mul x:Key="Converter.Math.Mul" />
+    <math:Div x:Key="Converter.Math.Div" />
+    <math:Sqrt x:Key="Converter.Math.Sqrt" />
+
+    <visibility:BooleanToVisibility x:Key="Converter.Visibility.Boolean" />
+    <visibility:NegativeBooleanToVisibility x:Key="Converter.Visibility.NegativeBoolean" />
+    <visibility:NullToVisibility x:Key="Converter.Visibility.Null" />
+    <visibility:NotNullToVisibility x:Key="Converter.Visibility.NotNull" />
+</ResourceDictionary>

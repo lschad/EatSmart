@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="SchadLucas.EatSmart.UI.Dialogs.FoodDetailDeleteDialog"
+             x:Name="FoodDetailDeleteDialogControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:SchadLucas.EatSmart.UI.Dialogs"
+             xmlns:dialogs="clr-namespace:SchadLucas.EatSmart.ViewModels.Dialogs"
+             mc:Ignorable="d">
+
+    <Grid d:DataContext="{d:DesignInstance Type=dialogs:IFoodDetailDeleteDialogContext, IsDesignTimeCreatable=False}">
+        <local:OkCancelDialog DialogTitle="lol fooddetaildelete brudi"
+                              DialogText="Willste das wirklich lösche, brudi?"
+                              DialogCallback="{Binding RespondCommand, Mode=OneWay}" />
+    </Grid>
+</UserControl>

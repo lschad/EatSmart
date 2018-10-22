@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="SchadLucas.EatSmart.UI.Views.LoadingScreenView"
+             x:Name="LoadingScreenViewControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:SchadLucas.EatSmart.UI.Views">
+
+    <Border Background="DeepSkyBlue" CornerRadius="8" BorderThickness="4" BorderBrush="LightSkyBlue"
+            VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+            Opacity="{Binding Opacity, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type UserControl}}}">
+        <TextBlock Text="EatSmart is loading . . ." Foreground="WhiteSmoke" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+        <!--<loading:LoadingIndicator SpeedRatio="1.0" IsActive="True" Style="{StaticResource LoadingIndicatorThreeDotsStyle}" />-->
+    </Border>
+</UserControl>

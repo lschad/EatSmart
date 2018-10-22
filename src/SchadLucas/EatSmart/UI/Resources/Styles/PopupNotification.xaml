@@ -1,0 +1,8 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <ResourceDictionary.MergedDictionaries>
+        <!--<ResourceDictionary Source="PopupNotification.Button.Close.xaml" />
+        <ResourceDictionary Source="PopupNotification.Button.Undo.xaml" />
+        <ResourceDictionary Source="PopupNotification.Notification.xaml" />
+        <ResourceDictionary Source="PopupNotification.Text.xaml" />-->
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

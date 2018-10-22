@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="SchadLucas.EatSmart.UI.Views.FoodDetailView"
+             x:Name="FoodDetailViewControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModels="clr-namespace:SchadLucas.EatSmart.ViewModels"
+             mc:Ignorable="d" d:DataContext="{d:DesignInstance Type=viewModels:IFoodDetailViewModel, IsDesignTimeCreatable=False}">
+    <StackPanel>
+        <TextBlock Text="Name?" />
+        <TextBlock Text="{Binding Food.Name}" />
+        <Button Command="{Binding DeleteCommand}" Content="Delete this Food yo" />
+    </StackPanel>
+</UserControl>
